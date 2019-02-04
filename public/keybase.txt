@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/aaronvigal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aaronvigal.com
+  * I am aaronvigal (https://keybase.io/aaronvigal) on keybase.
+  * I have a public key with fingerprint A12D 89BA BBF3 5B74 3B7F  7587 B07C 0F17 C696 1964
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01016d51b27d5b9fcf307c77594284b0d15d9aad828a8f09d8a72207a4cbbb4f3df80a",
+      "fingerprint": "a12d89babbf35b743b7f7587b07c0f17c6961964",
+      "host": "keybase.io",
+      "key_id": "b07c0f17c6961964",
+      "kid": "01016d51b27d5b9fcf307c77594284b0d15d9aad828a8f09d8a72207a4cbbb4f3df80a",
+      "uid": "4c54073bd48527bbc1a4c2a7a4944719",
+      "username": "aaronvigal"
+    },
+    "merkle_root": {
+      "ctime": 1548879895,
+      "hash_meta": "549f74c20b3d2731b2cd5fc0a1b257bcee7b0a2778d9178efd703aa5dd87469b",
+      "seqno": 4665266
+    },
+    "revoke": {
+      "sig_ids": [
+        "dc8ec76f01608418c1f1f0340114ae21de39d3e329960f984b48c0beeabd454b0f"
+      ]
+    },
+    "service": {
+      "hostname": "aaronvigal.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1548879917,
+  "expire_in": 157680000,
+  "prev": "aaabc24d21323766f202138f9c68d1b2765acff220c2333bbb2c57838311fe6e",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMK7AnicrZNdaBxVGIY3JrYmZSESEUVUHNlCbAznb+acWUnVQi1SiSUoiiau5zcZ
+d7OzmZlsbWOkoAQEQRFaGm+kUogNVsU0RG2QmAQxDWjTSK2lAelVg/RHrDFELzyz
+KCJ66dzMmZn3e7/3e86c+Wx9pqku985n07tbc6fqFmf3D2a6u266f8gRodrn5Iec
+oq7ddEnpOCkUA+XkHQAB9JQLBaLKFb6RBgMqKXV9ghgRQEFX+ZwrhhhnBviKcYoQ
+oJxIIQQxWBkGuNPmmKDcq6NKFJQTa8shUswXXAiDXUEJFtRQl1FhzYGBVHq+B32P
+2MK+ME4rbDjBY90ehPadfSjU4v2H/n/OPVizI9IlgGKhCHMRFUJCK0Tcyn1CKPRT
+YayjMu/X6XQ8CsvVoJeXnOE2p19HxZIuRGGYpHhlEqQi6BLGqM98147I475Cv064
+rXWJb6j1BgIrRLEdQCrXSMDtyqVCam0hcUQpUz6kTBtFAebcVYpR4vnCJon1QDl0
+8sTzXOR5NkGkq2FRp83joNeCi538s46STEvqGcsJMAKZhAYagAmAkHCNoNLYV1hj
+5PseML6FRpgEQmtuKbgWoXF6htNmUTWQNfN0p/5FoF2G/TZTJQqTUIYl+60vSSpx
+PiWT7Kuk4r1aFP60KYigrOyfYiuqOoqDsGxJWeU/odnB2xz9YiWIdCFIFS71GLBX
+2kdXa/25kIgoBDHC1PMMAnbJjC89ptKfwnO5NMbuuEQYY7vlSLqUYYYhNNrTf1PE
+zObkvdbTsivzZDDSzvDsTHdDpq4ps+nGG9IjlGlqbP7rYK3PbN6of7yYbe0oydUt
+O95EDc/cNfLeWDbINfQdmxwt3LKr8/zFneWG01eH6MlX5/bM7br3wlTPwsEfH+ru
+2fn6kcN0QD3fcTT/+9wnG19/OJPrWP7qwU/rvvtotXlqW3tn9txBfPXjyktn55ND
+l5/Mjv9w4fAjoxPjD5yabF25/bHZri8+eL/uyst3v3BizDycHdiY72+5ecf2Q0fv
+XHnjnrc6J5euf/721rFXui59c2L6yKZrv7w7UWn5svnM8v6F0wdeWzjQXVi/2Ljl
+OHiU/bo4cm7xp/j8U1t3f3/sTLF+YmLp8m8rl9bqp577Ode07eS3vbmOs9dve3r8
+ifuu7L1jbU/L6Orm5ZFbG6cz19aX1rZHfwDAmIYg
+=BxeU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aaronvigal
+
+==================================================================

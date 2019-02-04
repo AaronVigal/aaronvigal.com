@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Countdown</title>
+<style>
+#countdown{
+  width: 420px;
+}
+/* Change this setting above to change the size of the whole countdown including the font */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html, body {
+  height: 100%;
+  overflow:hidden;
+  background: rgba(17,126,104,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(17,126,104,1) 0%, rgba(17,126,104,1) 25%, rgba(1,81,54,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(17,126,104,1)), color-stop(25%, rgba(17,126,104,1)), color-stop(100%, rgba(1,81,54,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(17,126,104,1) 0%, rgba(17,126,104,1) 25%, rgba(1,81,54,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(17,126,104,1) 0%, rgba(17,126,104,1) 25%, rgba(1,81,54,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(17,126,104,1) 0%, rgba(17,126,104,1) 25%, rgba(1,81,54,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(17,126,104,1) 0%, rgba(17,126,104,1) 25%, rgba(1,81,54,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#117e68', endColorstr='#015136', GradientType=1 );
+}
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#countdowndays p{
+  opacity:1;
+}
+#countdownhours p{
+  opacity: 0.8;
+}
+#countdownmins p{
+  opacity: 0.6;
+}
+#countdownsecs p{
+  opacity: 0.4;
+}
+
+#countdown {
+	text-transform: uppercase;
+  display:block;
+  border:10px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  transition:.1s ease-in-out;
+}
+
+.box{
+  white-space:nowrap;
+  line-height:0.8;
+  margin-bottom:10px;
+}
+
+.box p{
+	font-size: 1em;
+	font-weight: 900;
+  display:inline-block;
+  font-family: Helvetica, Arial, Sans-Serif;
+  color: #16a085;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function makeTimer(){
+    
+	var endTime = new Date("17 October 2017 10:15:00 GMT+02:00");			
+	endTime = (Date.parse(endTime) / 1000);
+
+	var now = new Date();
+	now = (Date.parse(now) / 1000);
+
+	var timeLeft = endTime - now;
+
+	var days = Math.floor(timeLeft / 86400); 
+	var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+	var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+	var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+	$("#countdowndays p").html(days + " Days");
+	$("#countdownhours p").html(hours + " Hours");
+	$("#countdownmins p").html(minutes + " Minutes");
+	$("#countdownsecs p").html(seconds + " Seconds");
+	
+	//ADAPT FONT SIZE	
+	var fontwidth1 = $('#countdowndays p').width();
+  var divwidth = $('.box').width();
+  var size1 = parseFloat($('#countdowndays p').css('font-size'));
+  var fontsize1 = (divwidth / fontwidth1) * size1;
+        
+  var fontwidth2 = $('#countdownhours p').width();
+  var divwidth = $('.box').width();
+  var size2 = parseFloat($('#countdownhours p').css('font-size'));
+  var fontsize2 = (divwidth / fontwidth2) * size2;
+        
+  var fontwidth3 = $('#countdownmins p').width();
+  var divwidth = $('.box').width();
+  var size3 = parseFloat($('#countdownmins p').css('font-size'));
+  var fontsize3 = (divwidth / fontwidth3) * size3;
+        
+  var fontwidth4 = $('#countdownsecs p').width();
+  var divwidth = $('.box').width();
+  var size4 = parseFloat($('#countdownsecs p').css('font-size'));
+  var fontsize4 = (divwidth / fontwidth4) * size4;
+        
+  $('#countdowndays p').css("font-size", fontsize1);
+  $('#countdownhours p').css("font-size", fontsize2);
+  $('#countdownmins p').css("font-size", fontsize3);
+  $('#countdownsecs p').css("font-size", fontsize4);
+}
+// update every second
+setInterval(function() { makeTimer(); }, 1000);
+
+
+</script>
+</head>
+<body>
+<div id="countdown">
+			<div id="countdowndays" class="box"><p></p></div>
+			<div id="countdownhours" class="box"><p></p></div>
+			<div id="countdownmins" class="box"><p></p></div>
+			<div id="countdownsecs" class="box"><p></p></div>
+</div>
+
+</body>
+</html>
